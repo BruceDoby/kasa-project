@@ -4,6 +4,7 @@ import About from "./pages/about";
 import Error from "./pages/error";
 import Carrousel from "./pages/carrousel";
 import Header from "./Header";
+import Footer from "./Footer"
 
 function AppRouter() {
   return (
@@ -15,6 +16,7 @@ function AppRouter() {
         <Route path="/error" element={<Error />} />
         <Route path="/carrousel" element={<Carrousel />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
