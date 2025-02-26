@@ -22,7 +22,9 @@ const Dropdown = (props) => {
     <div className='dropdown'>
       <div className='dropdown-header' onClick={() => toggleDropdown(0)}>
         <p className='dropdown__p1'>{props.title}</p>
-        <i className={`fa-solid ${openIndex === 0 ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+        <span className={`chevron ${openIndex === 0 ? 'rotate' : ''}`}>
+          <i className="fa-solid fa-chevron-up"></i>
+        </span>
       </div>
       {openIndex === 0 && (
         <div className='dropdown-content'>
