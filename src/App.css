@@ -156,6 +156,8 @@ p {
   height: 340px;
   border-radius: 10px;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .gallery__title {
   z-index: 2;
