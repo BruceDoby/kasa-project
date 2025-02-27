@@ -196,6 +196,156 @@ footer img {
   padding-bottom: 35px;
 }
 
+.error__div {
+  margin-bottom: 130px;
+}
+.error__div a {
+  color: black;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.error__txt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 288px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #ff6060;
+}
+
+.error__p {
+  font-weight: 500;
+  color: #ff6060;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 120px;
+}
+
+.land__div2 {
+  position: relative;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.land__div2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.land__img2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.dropdown__about {
+  width: 1023px;
+}
+
+/*.dropdowns {
+    margin-bottom: 5px;
+
+
+}*/
+.dropdown-header {
+  height: 54px;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  z-index: 10;
+  cursor: pointer;
+  /*.chevron {
+      transition: transform 0.3s ease; // Animation douce pour la rotation
+  }*/
+}
+.dropdown .dropdown__p1 {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+.dropdown .fa-solid {
+  position: relative;
+  left: 940px;
+  bottom: 25px;
+  font-size: 30px;
+  transition: transform 0.6s ease;
+}
+.dropdown .rotate {
+  transform: rotate(180deg);
+}
+.dropdown .fa3 {
+  position: relative;
+  left: 945px;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  animation: slideDown 0.2s ease forwards;
+  z-index: 10;
+}
+.dropdown-content p {
+  width: 100%;
+  position: relative;
+  color: black;
+  background-color: #f6f6f6;
+  size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 68px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: -1;
+}
+
+@keyframes slideDown {
+  0% {
+    z-index: -10;
+    max-height: 0;
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    z-index: -10;
+    max-height: 500px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media (max-width: 376px) {
   header {
     padding-top: 25px;
@@ -235,17 +385,17 @@ footer img {
     border-radius: 10px;
   }
   .land__div p {
-    width: 210px;
+    width: 310px;
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 38%;
     transform: translate(-50%, -50%);
     font-weight: 700;
     font-size: 24px;
     z-index: 2;
   }
   .land__div .leftText {
-    margin-right: 77px;
+    margin-right: 92.5px;
   }
   .land__img {
     width: 100%;
@@ -254,11 +404,96 @@ footer img {
        object-fit: cover;
     border-radius: 10px;
   }
+  .error__div {
+    margin-bottom: 100px;
+  }
+  .error__div a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .error__txt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #ff6060;
+  }
+  .error__p {
+    font-weight: 500;
+    color: #ff6060;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  .leftTexterror {
+    display: block;
+  }
+  .land__div2 {
+    position: relative;
+    width: 335px;
+    height: 111px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .land__div2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 25px;
+  }
+  .land__img2 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 25px;
+  }
+  .dropdown-header {
+    height: 30px;
+  }
+  /*.dropdowns {
+
+  }*/
+  .dropdown {
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .dropdown .dropdown__p1 {
+    position: relative;
+    top: 5px;
+    left: 13px;
+    font-size: 13px;
+  }
+  .dropdown .fa-solid {
+    position: relative;
+    bottom: 15px;
+    left: 285px;
+    font-size: 22px;
+  }
+  .dropdown-content {
+    position: absolute;
+    top: 30px;
+    font-size: 12px;
+  }
+  .dropdown__about {
+    width: 335px;
+  }
   .gallery__container {
     padding-top: 0px;
     padding-bottom: 20px;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
+    width: 375px;
   }
   .gallery {
     background-color: white;
@@ -273,11 +508,21 @@ footer img {
     position: relative;
     width: 335px;
     height: 255px;
-    padding: 10px;
   }
   .gallery__card img {
     width: 335px;
     height: 255px;
+  }
+  .gallery__card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   }
   .gallery__title {
     position: absolute;
@@ -296,130 +541,5 @@ footer img {
   footer img {
     padding-top: 60px;
     padding-bottom: 35px;
-  }
-}
-.land__div2 {
-  position: relative;
-  width: 1240px;
-  height: 223px;
-  border-radius: 25px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-.land__div2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  border-radius: 25px;
-}
-.land__div2 p {
-  width: 1000px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 700;
-  font-size: 48px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  z-index: 2;
-}
-
-.land__img2 {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 25px;
-}
-
-.dropdowns {
-  margin-bottom: 5px;
-  /*.chevron {
-      transition: transform 0.3s ease; // Animation douce pour la rotation
-  }*/
-}
-.dropdowns .fa-solid {
-  position: relative;
-  left: 940px;
-  bottom: 25px;
-  font-size: 30px;
-  transition: transform 0.6s ease;
-}
-.dropdowns .rotate {
-  transform: rotate(180deg);
-}
-.dropdowns .fa3 {
-  position: relative;
-  left: 945px;
-}
-
-.dropdown {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1023px;
-  height: 54px;
-  background-color: #ff6060;
-  color: white;
-  border-radius: 5px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  z-index: 3;
-  cursor: pointer;
-}
-.dropdown .dropdown__p1 {
-  position: relative;
-  left: 20px;
-  top: 10px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-}
-
-.dropdown-content {
-  display: block;
-  position: relative;
-  right: 90px;
-  width: 1023px;
-  top: 50px;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  animation: slideDown 0.2s ease forwards;
-  z-index: -10;
-}
-.dropdown-content p {
-  width: 1023px;
-  position: absolute;
-  color: black;
-  background-color: #f6f6f6;
-  size: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  margin-bottom: 68px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  z-index: -1;
-}
-
-@keyframes slideDown {
-  0% {
-    max-height: 0;
-    transform: translateY(-60px);
-    opacity: 1;
-  }
-  100% {
-    max-height: 500px;
-    transform: translateY(0);
-    opacity: 1;
   }
 }/*# sourceMappingURL=App.css.map */

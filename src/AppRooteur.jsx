@@ -13,7 +13,7 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Error />} />
         <Route path="/carrousel" element={<Carrousel />} />
       </Routes>
       <Footer />

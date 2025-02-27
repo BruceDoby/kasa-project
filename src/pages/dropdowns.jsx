@@ -18,7 +18,6 @@ const Dropdown = (props) => {
   };
 
   return ( 
-    <div className='dropdowns'>
     <div className='dropdown'>
       <div className='dropdown-header' onClick={() => toggleDropdown(0)}>
         <p className='dropdown__p1'>{props.title}</p>
@@ -32,10 +31,10 @@ const Dropdown = (props) => {
         </div>
       )}
     </div>
-    </div>
     ) 
 }
 
 // Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
+//     <div className='dropdowns'>     </div>
 
 export default Dropdown
