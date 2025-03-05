@@ -18,7 +18,7 @@ const Dropdown = (props) => {
   };
 
   return ( 
-    <div className='dropdown'>
+    <div className={`dropdown ${props.className || ''}`}> {/* ancien classname : className='dropdown'*/}
       <div className='dropdown-header' onClick={() => toggleDropdown(0)}>
         <p className='dropdown__p1'>{props.title}</p>
         <span className={`chevron ${openIndex === 0 ? 'rotate' : ''}`}>
