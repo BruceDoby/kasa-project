@@ -3,6 +3,7 @@ import App from "./App";
 import About from "./pages/about";
 import Error from "./pages/error";
 import Carrousel from "./pages/carrousel";
+import Logement from "./pages/fichelogement"
 import Header from "./Header";
 import Footer from "./Footer"
 
@@ -15,6 +16,7 @@ function AppRouter() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
         <Route path="/carrousel" element={<Carrousel />} />
+        <Route path="/logement/:id" element={<Logement />} />
       </Routes>
       <Footer />
     </Router>

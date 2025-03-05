@@ -241,6 +241,60 @@ footer {
     margin-bottom: 120px;
 }
 
+.carrousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 60px;
+
+    .arrow-left,
+    .arrow-right {
+        position: absolute;
+        top: 47%;
+        transform: translateY(-50%);
+        cursor: pointer; // Pour indiquer que c'est cliquable
+        background: none;
+        border: none;
+        width: 47px;
+        height: 79px;
+
+        img {
+            width: 47px;
+            height: 79px;
+        }
+    }
+
+    .arrow-left {
+        left: 20px;
+    }
+
+    .arrow-right {
+        right: 20px;
+    }
+}
+
+.carrousel-image {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+
+    img {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+    }
+}
+
+.carrousel-counter {
+    position: relative;
+    bottom: 50px;
+    font-family: $font-family_1;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
 .land__div2 {
     position: relative;
     width: 1240px;
@@ -269,8 +323,131 @@ footer {
     border-radius: 25px;
 }
 
+.housing {
+    font-family: $font-family_1;
+
+    h1 {
+        font-weight: 500;
+        font-size: 36px;
+        color: $kasa_color;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-weight: 500;
+        color: $black_color;
+        font-size: 18px;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .tags {
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+        gap: 10px;
+        margin-top: 10px;
+
+        p {
+            background-color: $kasa_color;
+            color: white;
+            display: inline-block;
+            width: 115px;
+            height: 25px;
+            border-radius: 10px;
+        }
+    }
+
+    .host__infos {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        position: relative;
+        bottom: 130px;
+
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+
+        p {
+            position: relative;
+            top: 15px;
+            font-weight: 500;
+            font-size: 18px;
+            color: $kasa_color;
+        }
+    }
+}
+
+.rating {
+    position: relative;
+    bottom: 90px;
+}
+
+.stars {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+    .fa-solid {
+        font-size: 24px;
+    }
+}
+
+.dropdown__housing {
+    display: flex;
+    width: 1244px;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: -80px;
+
+    .dropdown {
+        .fa-solid {
+            position: relative;
+            left: 460px;
+            bottom: 25px;
+            font-size: 30px;
+            transition: transform 0.6s ease;
+        }
+
+        .dropdown-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: flex-start;
+
+            p {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        .dropdown-content span {
+            display: block; /* Affiche chaque élément de l'équipement en bloc */
+            text-align: left;
+            position: relative;
+            left: 20px;
+        }
+    }
+}
+
 .dropdown__about {
     width: 1023px;
+
+    .dropdown {
+        .fa-solid {
+            position: relative;
+            left: 940px;
+            bottom: 25px;
+            font-size: 30px;
+            transition: transform 0.6s ease; // Rotation lente et fluide
+        }
+    }
 }
 
 /*.dropdowns {
@@ -307,13 +484,13 @@ footer {
         font-size: 24px;
     }
 
-    .fa-solid {
+    /*.fa-solid {
         position: relative;
         left: 940px;
         bottom: 25px;
         font-size: 30px;
         transition: transform 0.6s ease; // Rotation lente et fluide
-    }
+    }*/
 
     /*.chevron {
         transition: transform 0.3s ease; // Animation douce pour la rotation
@@ -330,7 +507,7 @@ footer {
 }
 
 .dropdown-content {
-    display: block;
+    display: flex;
     position: absolute;
     // right: 90px;
     // background-color: $dropdown_color;
