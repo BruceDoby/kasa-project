@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom';
 import data from '../../public/data.json';
-import Carrousel from "./carrousel";
+import Carrousel from "../components/carrousel";
 // import { useNavigate } from 'react-router-dom';
 import Error from "./error"
-import Dropdown from './dropdowns';
-import Rating from "./rating"
+import Dropdown from '../components/dropdowns';
+import Rating from "../components/rating"
 
 function Logement() {
     const { id } = useParams();
@@ -20,7 +20,7 @@ function Logement() {
     return (
       <>
       <div className='center__elements'>
-        <Carrousel id={id} />
+        <Carrousel pictures={logement.pictures} />
         <div className='housing'>
           <h1>{logement.title}</h1>
           <h2>{logement.location}</h2>
