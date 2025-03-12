@@ -8,8 +8,6 @@ function Header() {
             <nav>
                 <Link to="/">Accueil</Link>
                 <Link to="/about">A propos</Link>
-                {/*<Link to="/error">Erreur 404</Link>
-                <Link to="/carrousel">Carrousel</Link>*/}
             </nav>
         </header>
     )

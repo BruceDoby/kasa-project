@@ -6,7 +6,7 @@ function Gallery() {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
-    navigate(`/logement/${id}`); // Navigation vers la fiche logement
+    navigate(`/logement/${id}`);
   };
 
   return (
