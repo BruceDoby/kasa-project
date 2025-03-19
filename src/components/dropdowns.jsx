@@ -4,7 +4,6 @@ const Dropdown = (props) => {
   const [openIndex, setOpenIndex] = useState(null); 
 
   const toggleDropdown = (index) => {
-    console.log("test", openIndex);
     if (openIndex === index) {
       setOpenIndex(null); 
     } else {
