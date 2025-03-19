@@ -377,6 +377,10 @@ footer img {
   gap: 80px;
   margin-top: -80px;
 }
+.dropdown__housing .dropdown-container {
+  width: 100%;
+  display: block;
+}
 
 .dropdown__about {
   width: 1023px;

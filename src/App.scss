@@ -405,6 +405,11 @@ footer {
     flex-direction: row;
     gap: 80px;
     margin-top: -80px;
+
+    .dropdown-container {
+        width: 100%;
+        display: block;
+    }
 }
 
 .dropdown__about {

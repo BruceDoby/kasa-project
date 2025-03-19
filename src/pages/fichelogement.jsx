@@ -29,8 +29,12 @@ function Logement() {
           </div>
           <Rating id={id} />
           <div className='dropdown__housing'>
+          <div className='dropdown-container'>
           <Dropdown title="Description" content={logement.description} />
+          </div>
+          <div className='dropdown-container'>
           <Dropdown title="Equipements" content={logement.equipments.map((equip, index) => (<span key={index}>{equip}</span>))} />
+          </div>
           </div>
         </div>
       </div>  
