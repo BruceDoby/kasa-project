@@ -75,6 +75,10 @@ header {
                 color: $black_color;
                 text-decoration: underline;
             }
+
+            &.active {
+                text-decoration: underline;
+            }
         }   
     }
 }
@@ -486,7 +490,10 @@ footer {
             // margin-bottom: 68px;
             padding-top: 10px;
             padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
             z-index: -1;
+            text-align: left;
         }
 
         span {

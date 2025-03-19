@@ -67,6 +67,9 @@ header nav a:hover {
   color: black;
   text-decoration: underline;
 }
+header nav a.active {
+  text-decoration: underline;
+}
 
 p {
   margin: 0px;
@@ -436,7 +439,10 @@ footer img {
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   z-index: -1;
+  text-align: left;
 }
 .dropdown .dropdown-content span {
   display: block;
